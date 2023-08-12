@@ -68,6 +68,7 @@ ol {
 
 .result__video-container {
   display: flex;
+  position: relative;
   width: 711px;
   height: 386px;
   margin-bottom: 16px;
@@ -76,6 +77,10 @@ ol {
 .result__video {
   width: 100%;
   object-fit: cover;
+}
+
+.content__list {
+  position: relative;
 }
 
 .content__list-item:not(:last-child) {
