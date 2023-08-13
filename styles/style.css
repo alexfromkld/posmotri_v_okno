@@ -180,8 +180,8 @@ ol {
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   content: '';
   display: block;
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   background-color: #fff;
 }
 
