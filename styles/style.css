@@ -110,7 +110,7 @@ ol {
 .search-form {
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  align-items: start;
 }
 
 .search-form__fieldset {
@@ -126,6 +126,7 @@ ol {
   border: none;
   border-top: 1px solid #FFF;
   border-bottom: 1px solid #FFF;
+  padding: 0;
   color: rgba(255, 255, 255, 0.70);
   font-family: Fira Sans Condensed;
   font-weight: 400;
@@ -151,7 +152,7 @@ ol {
   border: 1px solid #FFF;
 }
 
-.search-form__label:hover {
+.search-form__label-text:hover {
   text-decoration: underline;
 }
 
@@ -186,6 +187,7 @@ ol {
 }
 
 .search-form__submit-button {
+  align-self: flex-end;
   width: 194px;
 }
 
@@ -204,8 +206,7 @@ ol {
 
 .content__list {
   position: relative;
-  overflow: scroll;
-  overflow-x: hidden;
+  overflow: auto;
 }
 
 .content__card-link {
@@ -233,6 +234,7 @@ ol {
 }
 
 .content__video-card-title {
+  padding-bottom: 6px;
   font-family: Oswald;
   font-weight: 700;
   font-size: 30px;
