@@ -68,6 +68,11 @@ ol {
   text-decoration: underline;
 }
 
+.button:active {
+  background: #545050;
+  text-decoration: none;
+}
+
 .content {
   display: flex;
   align-items: flex-end;
@@ -149,7 +154,7 @@ ol {
 }
 
 .search-form__label:has(:focus-visible) {
-  border: 1px solid #FFF;
+  outline: 1px solid #FFF;
 }
 
 .search-form__label-text:hover {
@@ -179,6 +184,14 @@ ol {
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
+  content: '';
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+}
+
+.search-form__checkbox:active + .search-form__pseudo-checkbox::after {
   content: '';
   display: block;
   width: 15px;
